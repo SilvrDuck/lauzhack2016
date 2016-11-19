@@ -5,8 +5,9 @@ function getTemperature(uuid, minor)
     var cliclou = $.ajax({
         url: url2,
         headers: {
-        "token":"saEbYNtHbxZ6ThHE"
+        'token': 'saEbYNtHbxZ6ThHE'
         }
     });
+    console.log(cliclou.value);
     return cliclou.value;
 }
