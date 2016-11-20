@@ -7,7 +7,7 @@ function checkMotion(val) {
     var temp = val[0].value;
     console.log(temp)
     if(temp >= initial+5){
-        window.location.replace('./enigme_3.html');
+        window.location.replace('./end.html');
     }
     }
 }
