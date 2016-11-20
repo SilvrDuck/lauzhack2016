@@ -14,8 +14,10 @@ function getTemperature(uuid, minor)
         headers: {
         'token': 'saEbYNtHbxZ6ThHE',
         }
+    }).done(function(cliclou_json){
+        //console.log(cliclou_json[0].value);
+        return cliclou_json[0].value;
     });
     
-    console.log(cliclou_json);
     //return cliclou.value;
 }
