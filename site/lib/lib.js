@@ -1,3 +1,7 @@
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
 function getTemperature(uuid, minor)
 {
     var url = "http://lauzhack.ael.li/events/uuid/" + uuid + "/type/temperature/minor/" + minor + "/date/1000000000/2479563000";
@@ -10,6 +14,7 @@ function getTemperature(uuid, minor)
         'token': 'saEbYNtHbxZ6ThHE'
         }
     });
-    console.log(cliclou.value);
+    //console.log(cliclou.value);
     return cliclou.value;
 }
+

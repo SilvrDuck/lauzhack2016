@@ -1,8 +1,12 @@
-function checkTemp() {
-    alert("Temp = " + getTemperature("", ""));
+
+
+function checkTemp(thresh) {
+    if(test_getTemperature() >= thresh + 1){
+        window.location.replace('./enigme_2.html');
+    }
 }
 
-checkTemp()
+var initial_temperature = 11; // get_Temperature();
 
-//setInterval(function(){ checkTemp() }, 3000);
+//setInterval(function(){ checkTemp(initial_temperature) }, 500);
 //setInterval(function(){ alert("Hello"); }, 3000);
