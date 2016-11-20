@@ -16,7 +16,7 @@ function getTemperature(uuid, minor)
         }
     }).done(function(cliclou_json){
         //console.log(cliclou_json[0].value);
-        return cliclou_json[0].value;
+        var temperature = cliclou_json[0].value;
     });
     
     //return cliclou.value;
