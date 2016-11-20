@@ -1,8 +1,10 @@
 
 
 function checkTemp(thresh) {
-    if(test_getTemperature() >= thresh + 1){
-        window.location.replace('./enigme_2.html');
+    var temp = test_getTemperature();
+    console.log(temp)
+    if(temp >= thresh + 1){
+        //window.location.replace('./enigme_2.html');
     }
 }
 
