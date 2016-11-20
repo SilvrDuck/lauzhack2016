@@ -13,6 +13,7 @@ function getTemperature(uuid, minor, checkTemp)
         url: url2,
         headers: {
         'token': 'saEbYNtHbxZ6ThHE',
+
         },
         success : checkTemp
     } );
@@ -34,6 +35,7 @@ function getMotion(uuid, minor, checkMotion)
         },
         success : checkMotion
     } );
+
     
     //return cliclou.value;
 }

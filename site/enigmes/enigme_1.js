@@ -3,7 +3,7 @@ var initial;
 getTemperature("","", (val) => {initial = val[0].value});
 
 
-function checkTemp(val) {
+function checkMotion(val) {
     if(initial){
     var temp = val[0].value;
     console.log(temp)
@@ -13,5 +13,5 @@ function checkTemp(val) {
     }
 }
 
-setInterval(function(){ getTemperature("","", checkTemp) }, 500);
+setInterval(function(){ getTemperature("","", checkMotion) }, 500);
 //setInterval(function(){ alert("Hello"); }, 3000);
